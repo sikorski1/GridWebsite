@@ -38,6 +38,28 @@ h1.company-name {
 	color: $gold;
 }
 
+.section-title {
+	position: relative;
+	margin: 0 auto 2em;
+	font-size: 3rem;
+	color: $gold;
+	font-weight: 200;
+	width: fit-content;
+
+	&::before {
+		position: absolute;
+		bottom: -0.1em;
+		width: 40px;
+		height: 2px;
+		background-color: $gold;
+		content: '';
+	}
+
+	span {
+		font-weight: 900;
+	}
+}
+
 //HEADER
 
 .header {
@@ -201,7 +223,7 @@ h1.company-name {
 			border: 1px solid $gold;
 			border-radius: 8px;
 			opacity: 0;
-			content: "";
+			content: '';
 		}
 
 		&:hover::before {
@@ -224,7 +246,7 @@ h1.company-name {
 		}
 
 		&--two {
-			grid-row:2/3;
+			grid-row: 2/3;
 			grid-column: 1/-1;
 		}
 
@@ -232,5 +254,60 @@ h1.company-name {
 			grid-row: 3/4;
 			grid-column: 1/-1;
 		}
+	}
+}
+
+//MAIN INFO
+
+.info {
+	position: relative;
+	display: grid;
+	grid-template-areas:
+		'title title title'
+		'box box box'
+		'box box box';
+	padding: 6em 2em;
+
+	&__title {
+		grid-area: title;
+	}
+
+	&__boxes {
+		grid-area: box;
+	}
+
+	&__box-img {
+		width: 100%;
+		object-fit: cover;
+		filter: sepia();
+	}
+
+	&__box-title {
+		margin: 0.3em 0;
+		font-size: 2.6rem;
+		color: $gold;
+		font-weight: 200;
+	}
+
+	&__box-text {
+		margin-bottom: 0.5em;
+	}
+
+	&__box-link {
+		display: block;
+		margin-bottom: 2em;
+		font-weight: bold;
+		color: $gold;
+		text-align: right;
+		text-decoration: none;
+		transition: color .3s;
+
+		&:hover {
+			color: $darkgold;
+		}
+	}
+
+	&__bg-icon {
+		display: none;
 	}
 }

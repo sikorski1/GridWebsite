@@ -5,6 +5,13 @@
 		font-size: 6rem;
 	}
 
+	.section-title {
+		font-size: 4.8rem;
+
+		&::before {
+			height: 4px;
+		}
+	}
 	.header {
 		grid-template-rows: auto repeat(2, 1fr);
 		&__text {
@@ -26,7 +33,7 @@
 			position: absolute;
 			bottom: 3em;
 			left: 48%;
-			padding: 2em;
+			padding: 1em;
 			transform: translateX(-50%);
 			border: 1px solid $white;
 			border-radius: 50%;
