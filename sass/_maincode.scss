@@ -273,7 +273,7 @@ h1.company-name {
 	}
 
 	&__boxes {
-		grid-area: box;
+		grid-area: box
 	}
 
 	&__box-img {
@@ -293,7 +293,19 @@ h1.company-name {
 		margin-bottom: 0.5em;
 	}
 
+	&__box-text-read-more {
+		display: block;
+		opacity: 0;
+		height: 0;
+		// transition: 0.3s;
+	}
+
+	&__box-text-read-more--open {
+		opacity: 1;
+		height: auto;
+	}
 	&__box-link {
+		position: relative;
 		display: block;
 		margin-bottom: 2em;
 		font-weight: bold;

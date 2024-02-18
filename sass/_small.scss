@@ -26,27 +26,27 @@
 			z-index: -5;
 
 			&--one {
-				top: 14%;
+				top: 300px;
 				width: 20%;
 				animation: rotate-right 160s infinite linear;
 			}
 
 			&--two {
-				bottom: 10%;
+				top: 2000px;
 				left: 10%;
 				width: 30%;
-				animation: rotate-left 120s infinite linear;
+				animation: rotate-right 120s infinite linear;
 			}
 
 			&--three {
-				top: 26%;
+				top: 600px;
 				left: 16%;
 				width: 50%;
 				animation: rotate-left 140s infinite linear;
 			}
 
 			&--four {
-				top: 55%;
+				top: 1300px;
 				left: -10%;
 				width: 15%;
 				animation: rotate-right 140s infinite linear;

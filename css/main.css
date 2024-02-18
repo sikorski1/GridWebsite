@@ -271,7 +271,17 @@ h1.company-name {
 .info__box-text {
   margin-bottom: 0.5em;
 }
+.info__box-text-read-more {
+  display: block;
+  opacity: 0;
+  height: 0;
+}
+.info__box-text-read-more--open {
+  opacity: 1;
+  height: auto;
+}
 .info__box-link {
+  position: relative;
   display: block;
   margin-bottom: 2em;
   font-weight: bold;
@@ -452,24 +462,24 @@ h1.company-name {
     z-index: -5;
   }
   .info__bg-icon--one {
-    top: 14%;
+    top: 300px;
     width: 20%;
     animation: rotate-right 160s infinite linear;
   }
   .info__bg-icon--two {
-    bottom: 10%;
+    top: 2000px;
     left: 10%;
     width: 30%;
-    animation: rotate-left 120s infinite linear;
+    animation: rotate-right 120s infinite linear;
   }
   .info__bg-icon--three {
-    top: 26%;
+    top: 600px;
     left: 16%;
     width: 50%;
     animation: rotate-left 140s infinite linear;
   }
   .info__bg-icon--four {
-    top: 55%;
+    top: 1300px;
     left: -10%;
     width: 15%;
     animation: rotate-right 140s infinite linear;
